@@ -98,11 +98,6 @@ The <action> type attribute can be add,update,fix,remove.
         ZipArchiveInputStream failed to read some files with stored
         entries using a data descriptor.
       </action>
-      <action issue="COMPRESS-463" type="fix" date="2018-08-09">
-        ZipArchiveInputStream#read would silently return -1 on a
-        corrupted stored entry and even return > 0 after hitting the
-        end of the archive.
-      </action>
     </release>
     <release version="1.16.1" date="2018-02-10"
              description="Release 1.16.1">
