@@ -98,11 +98,6 @@ The <action> type attribute can be add,update,fix,remove.
         Add a version-independent link to the API docs of the latest
         release.
       </action>
-      <action issue="COMPRESS-463" type="fix" date="2018-08-09">
-        ZipArchiveInputStream#read would silently return -1 on a
-        corrupted stored entry and even return > 0 after hitting the
-        end of the archive.
-      </action>
     </release>
     <release version="1.12" date="2016-06-21"
              description="Release 1.12 - API compatible to 1.11 but requires Java 6 at runtime.
